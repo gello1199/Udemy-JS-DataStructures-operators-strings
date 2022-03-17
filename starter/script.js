@@ -45,39 +45,49 @@ const restaurant = {
     }
 };
 
+// The Nullish Coalescing Operator 
+
+// restaurant.numGuests = 0
+// const guests = restaurant.numGuests || 10
+// console.log(guests)
+
+// // Nullish: null and undefined (Not 0 or '')
+// const guestsCorrect = restaurant.numGuests ?? 10
+// console.log(guestsCorrect)
+
 // Logical Operators
 
-console.log('---- OR ----')
+// console.log('---- OR ----')
 
-// Use any data type, return any data type, short-circuiting
-// short-circuiting - if first value is truthy, it will immediately return that first value
-console.log(3 || 'Jonas')
-console.log('' || 'Jonas')
-console.log(true || 0)
-console.log(undefined || null)
+// // Use any data type, return any data type, short-circuiting
+// // short-circuiting - if first value is truthy, it will immediately return that first value
+// console.log(3 || 'Jonas')
+// console.log('' || 'Jonas')
+// console.log(true || 0)
+// console.log(undefined || null)
 
-console.log(undefined || 0 || "" || "hello" || 23 || null)
+// console.log(undefined || 0 || "" || "hello" || 23 || null)
 
-restaurant.numGuests = 23
-const guests1 = restaurant.numGuests ? restaurant.numGuests : 10
-console.log(guests1)
+// restaurant.numGuests = 23
+// const guests1 = restaurant.numGuests ? restaurant.numGuests : 10
+// console.log(guests1)
 
-const guests2 = restaurant.numGuests || 10
-console.log(guests2)
+// const guests2 = restaurant.numGuests || 10
+// console.log(guests2)
 
-console.log('---- AND ----')
+// console.log('---- AND ----')
 
-console.log(0 && 'Jonas')
-console.log(7 && 'Jonas')
+// console.log(0 && 'Jonas')
+// console.log(7 && 'Jonas')
 
-console.log('Hello' && 23 && null && 'Jonas')
+// console.log('Hello' && 23 && null && 'Jonas')
 
-// Practical example
-if (restaurant.orderPizza) {
-  restaurant.orderPizza('mushrooms', 'spinach')
-}
+// // Practical example
+// if (restaurant.orderPizza) {
+//   restaurant.orderPizza('mushrooms', 'spinach')
+// }
 
-restaurant.orderPizza && restaurant.orderPizza('mushrooms', 'spinach')
+// restaurant.orderPizza && restaurant.orderPizza('mushrooms', 'spinach')
 
 // 1) Destructuring
 

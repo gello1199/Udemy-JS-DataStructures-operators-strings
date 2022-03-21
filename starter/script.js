@@ -78,7 +78,11 @@ console.log(openingHours)
 
 // Entire Object
 const entries = Object.entries(openingHours)
-console.log(entries)
+// console.log(entries)
+
+for(const [key, {open, close}] of entries) {
+  console.log(`On ${key} we open at ${open} and close at ${close}`)
+}
 
 // if(restaurant.openingHours && restaurant.openingHours.mon)
 // console.log(restaurant.openingHours.mon.open)
